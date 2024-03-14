@@ -4,9 +4,6 @@
 @description('Name of the Function App')
 param name string = ''
 
-@description('Location to deploy the environment resources')
-param location string = resourceGroup().location
-
 var resourceName = !empty(name) ? replace(name, ' ', '-') : 'a${uniqueString(resourceGroup().id)}'
 
 @description('Tags to apply to environment resources')
