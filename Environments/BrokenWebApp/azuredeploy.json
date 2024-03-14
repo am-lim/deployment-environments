@@ -15,12 +15,6 @@
         "description": "Name of the Function App"
       }
     },
-    "location": {
-      "defaultValue": "[resourceGroup().location]",
-      "metadata": {
-        "description": "Location to deploy the environment resources"
-      }
-    },
     "tags": {
       "type": "object",
       "defaultValue": {},
